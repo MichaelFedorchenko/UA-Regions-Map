@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Michael Fedorchenko - http://mkf.kiev.ua" />
+  <title>REGION UA MAP</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script type="text/javascript" src="js/paths.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+</head>
+<body>
+<div class="loader-onb"><div></div></div>
+<div class="main"></div>
+<header>
+  <strong>REGIONS UA MAP</strong>
+  <div class="menu">Лицензия</div>
+  <div class="search">
+    <form action="javascript: find();">
+      <input type="text" id="i1" placeholder="ПОИСК" maxlength="2" />
+      <input type="submit" value="Go!" />
+    </form>
+  </div>
+</header>
+<div class="popup-dark"></div>
+<div class="license-wrap">
+  <div class="license">
+    <div class="pa-close"><div></div><div></div></div>
+    <strong>Немного об открытой лицензии</strong>
+    <p>
+      Контуры карты взяты с сайта <a href="http://www.amcharts.com/svg-maps/">http://amcharts.com</a>
+      <br />Карта собрана с помощью <a href="http://raphaeljs.com/">Raphaël</a>
+      <br />Фоновое изображение так же взято с просторов интернета, при помощи Google search
+      <br />SVG изображение флага Украины для номерного знака, взято с репозитория <a href="http://www.wikimedia.org">Wikimedia</a>
+    <hr />Данная разработка не предусмотрена для продажи и находится в свободном использовании. <a href="">Имеет открытый исходный код.</a>
+    <hr />Автор сборки: Michael-F &copy; 2015 <a href="http://mkf.kiev.ua">http://mkf.kiev.ua</a>
+    </p>
+  </div>
+</div>
+<section>
+  <div class="wrap">
+    <div id="map"></div>
+    <div id="nms"></div>
+    <div id="alt"></div>
+  </div>
+</section>
+<footer>
+  <strong><a href="http://mkf.kiev.ua">Michael-F</a> &copy; 2015</strong>
+</footer>
+</body>
+</html>
